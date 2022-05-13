@@ -5,50 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Repository</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet"> 
     <style>
         *{
             margin: 0px;
             padding: 0px;
             border: 0px;
-        }
-        body {
-            
-            background: rgb(255,0,51);
-            background: linear-gradient(90deg, rgba(255,0,51,1) 0%, rgba(255,0,98,1) 35%);
-        }
-        h1.bem-vindo {
-            color: black;
-            font-size: 2em;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            display: block;
-            height: auto;
-            width: 180px;
-            margin: auto;
-            border: 1px solid black;
+        } footer{
+            width: 100%;
+            height: 25px;
+            background-color: black;
+            position: absolute;
+            font-size: 0.8em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0px;
+            color: white;
             text-align: center;
-            margin-top: 9px;
+            bottom: 0.1px;
             
+} 
+        body {
+            height: 100vh;
+            background-color: #1DA1F2;
+        }
+        .bem-vindo {
+            color: rgb(255, 255, 255);
+            font-size: 2em;
+            font-family: 'Koulen', cursive;   
+            margin: auto;
+            border: 1px solid rgba(255, 0, 0, 0);
+            text-align: center;
+            
+            
+        }
+        main {
+            margin: auto;
+            width: 340px;
+            height: 92vh;
+            background-color:#1da1f2;
         }
         div {
-            margin: auto;
-            margin-top: 10px;
-            width: 190px;
-            height: 50px;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0px 0px 2px;
+
         }
         header {
-            background-color: #ffffff;
-            margin-top: -10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.267);
+            background-color: #1DA1F2;
+            width: 100%;
+        }
+        .txtz {
+            color: white;
+            padding: 10px;
+            display: block;
+            width: auto;
+            height: auto;
+            margin: auto;
+            font-size: 1em;
+            font-family: 'Cagliostro', sans-serif;
+            background-color:#ff0400;
+            border: 1px solid rgba(0, 0, 0, 0);
+            border-radius: 3px 3px 20px 20px;
+        } a {
+            font-size: 1.5em;
         }
     </style>
 </head>
 <body>
     <header>
         <h1 class="bem-vindo">Bem-Vindo</h1>
-        <a href="./contato/contato-index.html">Redes Sociais</a>
-
+        <a href="./contato/contato-index.html"><img src="https://img.icons8.com/external-parzival-1997-detailed-outline-parzival-1997/64/000000/external-social-digital-globalization-parzival-1997-detailed-outline-parzival-1997.png"/></a>
     </header>
+    <main>
+        <section>
+            <span class="txtz">
+                <p>"Este o e meu repositorio do GitHub, sendo feito com muito esforço até porque eu não lá um grandioso programador ainda, está sendo mais pra mim aproveitar o lugar e expor meus projetinhos de alguma forma."</p>
+            </span>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido Por | <a href="@">Carlos Henrique O. Silva</a>
+    </footer>
 </body>
 </html>
