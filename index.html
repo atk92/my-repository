@@ -16,11 +16,14 @@
         *{
             margin: 0px;
             padding: 0px;
-            border: 0px;
-        
+            border: 0px;        
         } .footer-dark {
-        color:#282d32;
-        background-color:#f0f9ff;
+            color: #282d32;
+            background-color: #f0f9ff;
+            position: absolute;
+            bottom: 0;
+            width: 100vw;
+            height: 10.3vh;
         }
 
         .icones-social2 {
@@ -46,12 +49,11 @@
         margin-bottom:0;
         }
         body {
-            
             background-color: #1DA1F2;
         }
         .bem-vindo {
             color: rgb(255, 255, 255);
-            font-size: 2em;
+            font-size: 1.8vh;
             font-family: 'Koulen', cursive;   
             margin: auto;
             border: 1px solid rgba(255, 0, 0, 0);
@@ -61,21 +63,20 @@
         }
         main {
             margin: auto;
-            width: 340px;
-            height: 88.5vh;
+            width: 100vw;
+            height: 50vh;
             background-color:#1da1f2;
         }
         header {
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.267);
             background-color: #1DA1F2;
-            width: 100%;
+            width: 100hw;
         }
         .txtz {
+            width: 50vw;
             color: white;
-            padding: 10px;
+            padding: 1vh;
             display: block;
-            width: auto;
-            height: auto;
             margin: auto;
             font-size: 1em;
             font-family: 'Cagliostro', sans-serif;
@@ -85,12 +86,13 @@
         } a {
             font-size: 1.5em;
         }
+
     </style>
 </head>
-<body>
+<body style="height:100vh; width:100vw;">
     <header>
         <h1 class="bem-vindo">Bem-Vindo</h1>
-        <a href="./contato/contato-index.html"><img src="https://img.icons8.com/external-parzival-1997-detailed-outline-parzival-1997/64/000000/external-social-digital-globalization-parzival-1997-detailed-outline-parzival-1997.png"/></a>
+        
     </header>
     <main>
         <section>
@@ -100,8 +102,7 @@
         </section>
     </main>
     <footer class="footer-dark">
-        <div class="container">
-            <div class="row">
+            
                 
             <div class="icones-social">
                 
@@ -117,8 +118,6 @@
 
             </div>
             <p class="rodape-text">Carlos Henrique O. Silva <br> 2022</p>
-
-            </div>
     </footer>
 </body>
 </html>
