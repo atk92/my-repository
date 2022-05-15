@@ -12,21 +12,21 @@
             image-rendering: pixelated;
             image-rendering: crisp-edges;
             image-rendering: -moz-crisp-edges;
-            width: 800px;
-            height: 800px;
-            margin: auto;
-            padding: 1px;
-            background-color: black;
+            width: 500px;
+            height: 500px;
+
         }
 
         
     </style>
+    <link rel="shortcut icon" href="https://img.icons8.com/clouds/64/000000/apple-arcade.png"" type="image/x-icon">
 <body>
 <canvas id="screen" width="10" height="10"></canvas>
 <script>
     const screen = document.getElementById('screen');
     const ctx = screen.getContext('2d');
     const currentPlayerId = 'player1'
+    
     const game = { 
         players: {
             'player1': {x: 1, y: 1 },
@@ -38,7 +38,7 @@
         }
         function createGame() {
             function movePlayer(command) {
-                console.log(`Moving ${command.PlayerId} com ${command.keyPressed}`)
+                console.log(`Moving ${command.playerId} com ${command.keyPressed}`)
                 return
                     movePlayer
             }
@@ -75,7 +75,7 @@
 
             for (const playerId in game.players) {
                 const player = game.players[playerId]
-                ctx.fillStyle = 'white'
+                ctx.fillStyle = 'black'
                 ctx.fillRect(player.x, player.y,1 ,1)}
                 for (const fruitId in game.fruits) {
                 const fruit = game.fruits[fruitId]
