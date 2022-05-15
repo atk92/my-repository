@@ -40,7 +40,7 @@
     
 
         function movePlayer(command) {
-            console.log(`Moving ${command.playerId} com ${command.keyPressed}`)
+            console.log(`${command.playerId} Apertou a tecla ${command.keyPressed}`)
             const keyPressed = command.keyPressed
             const player = state.players[command.playerId]
             if (keyPressed === 'ArrowUp' && player.y - 1 >= 0){
@@ -66,17 +66,38 @@
         }
     }
     const game = createGame()
+    const keyboardListener = createKeyboardListener()
+    keyboardListener.subcribe(game.movePlayer)
 
-    document.addEventListener('keydown', handleKeydown)
-
-    function handleKeydown(event) {
-        const keyPressed = event.key
-        const command = {
-            playerId: 'player1', keyPressed
+    function createKeyboardListener () {
+        const state = {
+            observers: []
         }
-        game.movePlayer(command)
-    }
+            
+        function subcribe (observerFunction) {
+            state.observers.push(observerFunction)
+        }
+        function notifyAll(command) {
+            console.log(`Notificando ${state.observers.length} Observers`)
+            for (const observersFunction of state.observers) {
+                observersFunction(command)
+            }
+        }
 
+        document.addEventListener('keydown', handleKeydown)
+
+        function handleKeydown(event) {
+            const keyPressed = event.key
+            
+            const command = {
+                playerId: 'player1', keyPressed
+            }
+            notifyAll(command)
+        }
+        return{
+            subcribe
+        }
+    }
     renderScreen()
         function renderScreen () {
             ctx.fillStyle = 'white'
