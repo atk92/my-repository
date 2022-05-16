@@ -4,7 +4,7 @@ function inserirNum (num) {
 }
 
 function limpar() {
-    document.getElementById('resultado').innerHTML = " ";
+    document.getElementById('resultado').innerHTML = "";
 }
 
 function apagadorNum() {
