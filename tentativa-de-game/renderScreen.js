@@ -6,13 +6,13 @@ function renderScreen (screen, game, requestAnimationFrame) {
 
     for (const playerId in game.state.players) {
         const player = game.state.players[playerId]
-        ctx.fillStyle = 'black'
+        ctx.fillStyle = 'white'
         ctx.fillRect(player.x, player.y,1 ,1)
     }
     
     for (const fruitId in game.state.fruits) {
         const fruit = game.state.fruits[fruitId]
-        ctx.fillStyle = 'yellow'
+        ctx.fillStyle = 'red'
         ctx.fillRect(fruit.x, fruit.y, 1, 1)
 }
 requestAnimationFrame(()=>{renderScreen(screen, game,requestAnimationFrame)})

@@ -4,11 +4,15 @@
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;
-    width: 400px;
-    height: 400px;
+    width: 50vw;
+    height: 90vh;
     margin: auto;
     display: flex;
+    background-color: black;
 }
 .cnvs {
     margin: auto;
+}
+body {
+    background-image: linear-gradient(black, red);
 }
