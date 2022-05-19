@@ -14,5 +14,5 @@
     margin: auto;
 }
 body {
-    background-image: linear-gradient(black, red);
+    background-image: linear-gradient(black, rgb(0, 0, 255));
 }
