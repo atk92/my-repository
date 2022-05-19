@@ -19,7 +19,6 @@ export default
         function handleKeydown(event) {
             const keyPressed = event.key
             console.log (keyPressed)
-            
             const command = {
                 playerId: 'player1', keyPressed
             }

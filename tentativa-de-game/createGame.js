@@ -3,7 +3,7 @@ function createGame() {
     const state = {
     players: {},
     fruits: {},
-    screen:{ width: 10, height:10 }
+    screen:{ width: 30, height:30 }
     }
     function addPlayer (command) {
         const playerId = command.playerId
@@ -17,7 +17,8 @@ function createGame() {
     function removePlayer(command) {
         const playerId = command.playerId
         delete state.players[playerId]}
-    function addFruit (command) {
+    
+        function addFruit (command) {
         const fruitId = command.fruitId
         const fruitX = command.fruitX
         const fruitY = command.fruitY
@@ -35,28 +36,28 @@ function createGame() {
     }
 
     function movePlayer(command) { 
-        console.log(`${command.playerId} Apertou a tecla ${command.keyPressed}`)
+
     
         const acceptedMoves = {
             ArrowUp(player) {
-                console.log('Movendo player para CIMA')
+              
                 if (keyPressed === 'ArrowUp' && player.y - 1 >= 0){
                 player.y = player.y - 1 }
             },
             ArrowDown(player) {
-                console.log('Movendo player para BAIXO')
+              
                 if (keyPressed === 'ArrowDown' && player.y + 1 < state.screen.height) {
                 player.y = player.y + 1 }
             },
         
             ArrowRight(player) {
-                console.log('Movendo player para DIREITA')
+                
                 if (keyPressed === 'ArrowRight' && player.x + 1 < state.screen.width ){
                 player.x = player.x + 1 }
             },
     
             ArrowLeft(player) {
-                console.log('Movendo player para ESQUERDA')
+                
                 if (keyPressed === 'ArrowLeft' && player.x - 1 >= 0){
                 player.x = player.x - 1 }
             }
@@ -65,7 +66,7 @@ function createGame() {
        
        
        
-       
+      
         const keyPressed = command.keyPressed
         const playerId = command.playerId
         const player = state.players[playerId]
@@ -85,8 +86,13 @@ function createGame() {
                     const fruit = state.fruits[fruitId]
                    
                 if (player.x === fruit.x && player.y === fruit.y ) {
-                    console.log('Colidiu com a fruta')
+                    
+                    
+                    
+                    
                     removeFruit({ fruitId: fruitId})
+                    
+                
                 }    
                 }
             }

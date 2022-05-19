@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="https://img.icons8.com/clouds/64/000000/apple-arcade.png" type="image/x-icon">
 <body><div class="cnvs">
     
-    <canvas id="screen" width="10" height="10"></canvas>
+    <canvas id="screen" width="30" height="30"></canvas>
 </div>
 <script type="module">
     import createKeyboardListener from './keyboard-listener.js'
@@ -18,7 +18,7 @@
     import createGame from './createGame.js'
     
     import renderScreen from './renderScreen.js'
-
+    
     const game = createGame()
     const keyboardListener = createKeyboardListener(document)
     keyboardListener.subcribe(game.movePlayer)    
@@ -31,18 +31,29 @@
     
 
     
-
-
-
+    
+    game.addFruit({fruitId: 'fruit2', fruitX: 0, fruitY: 5})
+    game.addFruit({fruitId: 'fruit3', fruitX: 1, fruitY: 6})
+    game.addFruit({fruitId: 'fruit4', fruitX: 2, fruitY: 6})
+    game.addFruit({fruitId: 'fruit5', fruitX: 3, fruitY: 6})
+    game.addFruit({fruitId: 'fruit6', fruitX: 4, fruitY: 6})
+    game.addFruit({fruitId: 'fruit7', fruitX: 5, fruitY: 6})
+    game.addFruit({fruitId: 'fruit8', fruitX: 6, fruitY: 6})
+    game.addFruit({fruitId: 'fruit9', fruitX: 7, fruitY: 6})
+    game.addFruit({fruitId: 'fruit1', fruitX: 8, fruitY: 6})
+    game.addFruit({fruitId: 'fruit12', fruitX: 0, fruitY:6})
+    game.addFruit({fruitId: 'fruit13', fruitX: 1, fruitY: 5})
+    game.addFruit({fruitId: 'fruit14', fruitX: 2, fruitY: 5})
+    game.addFruit({fruitId: 'fruit15', fruitX: 3, fruitY: 5})
+    game.addFruit({fruitId: 'fruit16', fruitX: 4, fruitY: 5})
+    game.addFruit({fruitId: 'fruit17', fruitX: 5, fruitY: 5})
+    game.addFruit({fruitId: 'fruit18', fruitX: 6, fruitY: 5})
+    game.addFruit({fruitId: 'fruit19', fruitX: 7, fruitY: 5})
+    game.addFruit({fruitId: 'fruit10', fruitX: 8, fruitY: 5})
     game.addPlayer({ playerId: 'player1', playerX: 0, playerY: 0})
-    game.addFruit({ fruitId: 'fruit1', fruitX: 2, fruitY: 7})
-    game.addFruit({ fruitId: 'fruit2', fruitX: 3, fruitY: 8})
-    game.addFruit({ fruitId: 'fruit3', fruitX: 5, fruitY: 9})
-    game.addFruit({ fruitId: 'fruit4', fruitX: 9, fruitY: 3})
-    game.addFruit({ fruitId: 'fruit5', fruitX: 8, fruitY: 1})
-    game.addFruit({ fruitId: 'fruit6', fruitX: 4, fruitY: 6})
-    game.addFruit({ fruitId: 'fruit7', fruitX: 7, fruitY: 9})
-    game.addFruit({ fruitId: 'fruit8', fruitX: 6, fruitY: 5})
+   
+
+
     
 
 </script>
@@ -50,7 +61,6 @@
 </body>
 <div><table>
     <tr><td>
-        <button id="botao" onclick="window.location.reload()">Recomeçar...</button>
-    </td></tr>
+        <button id="botao" onclick="window.location.reload()">Recomeçar...</button></td></tr>
 </table></div>
 </html>
