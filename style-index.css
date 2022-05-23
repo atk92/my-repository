@@ -45,8 +45,8 @@ body {
 }
 .bem-vindo {
     color: rgb(255, 255, 255);
-    font-size: 2.8vh;
-    font-family: 'Koulen', cursive;   
+    font-size: 2.0vh;
+    font-family: cursive;   
     margin: auto;
     border: 1px solid rgba(255, 0, 0, 0);
     text-align: center;
@@ -56,9 +56,9 @@ body {
 main {
     margin: auto;
     width: 100vw;
-    min-width: 240px;
+    min-width: 200px;
     
-    height: 50vh;
+    height:1vh;
     background-color:#1da1f2;
 }
 header {
@@ -67,28 +67,29 @@ header {
     width: 100hw;
 }
 .txtz {
-    width: 75vw;
+    width: 85vw;
     color: white;
     padding: 1vh;
     display: block;
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 1.35em;
     font-family: 'Cagliostro', sans-serif;
     background-color:#ff0400;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 3px 3px 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.499);
 } a {
     font-size: 1.5em;
 }
 .container {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    margin: 10vh auto;
+    margin: 10px auto;
     border-radius: 30px;
     background-color: #4abafff6;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.499);
     justify-content: space-around;
-    width: 40vw;
+    width: 70vw;
     
 }
