@@ -84,9 +84,10 @@ header {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    margin: 10vh auto;
-    gap: 3vh;
-    justify-content: space-evenly;
-    width: 30vw;
-    height: 20vh;
+    margin: 2vh auto;
+    border-radius: 30px;
+    background-color: #1d23f6;
+    justify-content: space-around;
+    width: 40vw;
+    
 }
