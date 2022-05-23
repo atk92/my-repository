@@ -22,7 +22,7 @@ kaboom({
   
   loadRoot('./')
   loadSprite('coin', 'moeda.png')
-  loadSprite('evil-shroom', 'coppa-cinza.png')
+  loadSprite('evil-shroom', 'coppa1.png')
   loadSprite('brick', 'bloco-q.png')
   loadSprite('block', 'bloco-v.png')
   loadSprite('mario', 'mario.png')
@@ -37,7 +37,7 @@ kaboom({
   loadSprite('blue-block', 'bloco-c-2.png')
   loadSprite('blue-brick', 'bloco-c-2.png')
   loadSprite('blue-steel', 'bloco-c-2.png')
-  loadSprite('blue-evil-shroom', 'bloco-c-2.png')
+  loadSprite('blue-evil-shroom', 'coppa-cinza.png')
   loadSprite('blue-surprise', 'bloco-c-2.png')
   
   
