@@ -1,0 +1,36 @@
+@charset "utf-8";
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: auto;
+    width: 99vw;
+    height: 98vh;
+}
+body {
+    background-color: black;
+}
+td {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: center;
+    font-family: monospace;
+    font-size: 8px;
+    position: relative;
+    margin: auto;
+    
+} 
+.pixel-index {
+    font-size: 1px;
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: #999;
+}
+td.pixel {
+    width: 3px;
+    height: 3px;
+    border: 0;
+}

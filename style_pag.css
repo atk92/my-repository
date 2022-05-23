@@ -1,0 +1,22 @@
+@charset "utf-8";
+* {
+    padding: 0px; margin: 0px;
+}
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 5px;
+}
+.content {
+    
+    border-radius: 50%;
+    width: 50vw;
+    height: 25vh;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(252, 70, 70) 50%, rgb(255, 214, 156) 100%);
+    transition: 1000ms;
+    
+}
