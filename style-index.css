@@ -45,11 +45,13 @@ body {
 }
 .bem-vindo {
     color: rgb(255, 255, 255);
-    font-size: 2.0vh;
+    font-size: 2.0vw;
     font-family: cursive;   
-    margin: auto;
+    margin: auto 10px;
     border: 1px solid rgba(255, 0, 0, 0);
     text-align: center;
+    display: flex;
+    justify-content: center;
     
     
 }
@@ -70,7 +72,7 @@ header {
     width: 85vw;
     color: white;
     padding: 1vh;
-    display: block;
+    display: flex;
     margin: auto;
     font-size: 1.35em;
     font-family: 'Cagliostro', sans-serif;
