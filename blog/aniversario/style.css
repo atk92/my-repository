@@ -4,7 +4,15 @@
     padding: 0; margin:0;  
 }
 body {
-    background: linear-gradient(135deg, hsla(296, 100%, 6%, 1) 0%, hsla(5, 90%, 24%, 1) 100%);
+    background: hsla(75, 5%, 16%, 1);
+
+background: linear-gradient(135deg, hsla(75, 5%, 16%, 1) 1%, hsla(332, 81%, 38%, 1) 64%, hsla(218, 42%, 55%, 1) 83%, hsla(0, 0%, 100%, 1) 96%);
+
+background: -moz-linear-gradient(135deg, hsla(75, 5%, 16%, 1) 1%, hsla(332, 81%, 38%, 1) 64%, hsla(218, 42%, 55%, 1) 83%, hsla(0, 0%, 100%, 1) 96%);
+
+background: -webkit-linear-gradient(135deg, hsla(75, 5%, 16%, 1) 1%, hsla(332, 81%, 38%, 1) 64%, hsla(218, 42%, 55%, 1) 83%, hsla(0, 0%, 100%, 1) 96%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2b2c28", endColorstr="#af125a", GradientType=1 );
 }
 
 .conteudo-texto {
@@ -30,7 +38,7 @@ body {
     font-family: 'Julius Sans One';
     font-size: 2vh;
     width: 80vw;
-    background-color: rgba(255, 0, 0, 0.473);
+    background-color: #C880B7;
     color: white;
     padding: 10px 2px 10px 2px; 
     border-radius: 30px;
@@ -53,12 +61,12 @@ body {
     justify-content: center;
     font-family: 'Julius Sans One';
     font-size: 2vh;
-    background-color: rgba(137, 43, 226, 0.541);
+    background-color: #be3462;
     border-radius: 25px;
     width: 80vw;
     margin: auto;
     padding: 5px;
-    box-shadow: 0px 0px 10px blueviolet;
+    box-shadow: 0px 0px 15px #9E1946;
 
 
 }
