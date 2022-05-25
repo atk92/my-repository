@@ -1,0 +1,64 @@
+@charset 'utf-8';
+
+* {
+    padding: 0; margin:0;  
+}
+body {
+    background: linear-gradient(135deg, hsla(296, 100%, 6%, 1) 0%, hsla(5, 90%, 24%, 1) 100%);
+}
+
+.conteudo-texto {
+    border-radius: 15px;
+    padding: 10px 5px 10px 5px;
+    margin:  auto;
+    width: 80vw;
+    display: flex;
+    font-size: 1.9vh;
+    font-family: 'Julius Sans One';
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px #ffffff
+    
+
+}
+#demo {
+    font-size: 10vw;
+    color: white;
+}
+.paragrafo-ultimo {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Julius Sans One';
+    font-size: 2vh;
+    width: 80vw;
+    background-color: rgba(255, 0, 0, 0.473);
+    color: white;
+    padding: 10px 2px 10px 2px; 
+    border-radius: 30px;
+    margin: 1vh auto ;
+    box-shadow: 0px 0px 10px rgb(247, 84, 84)
+}
+.gif {
+    width: 10vw;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    margin: auto;
+    border-radius: 40% 40% 0px 0px;
+    box-shadow: 0px 0px 15px white;
+
+}
+
+.clock{
+    display: flex;
+    justify-content: center;
+    font-family: 'Julius Sans One';
+    font-size: 2vh;
+    background-color: rgba(137, 43, 226, 0.541);
+    border-radius: 25px;
+    width: 80vw;
+    margin: auto;
+    padding: 5px;
+    box-shadow: 0px 0px 10px blueviolet;
+
+
+}
