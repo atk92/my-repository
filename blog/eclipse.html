@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse</title>
+    <style>
+        body {
+            background-color: white;
+            animation: dayToNight 5s infinite 1s;}
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: block;
+            }
+            .sun {
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                background-color: #fcd25b;
+                border: 3px solid #fcd25b;
+
+            }
+            .shadow {
+                height: 180px;
+                width: 180px;
+                border-radius: 50%;
+                background-color: white;
+                animation: moveShadow 5s infinite 1s;
+                
+            }
+            @keyframes moveShadow 
+            { 0% {transform: translateX(150px);
+            background-color: white;}
+                                    
+            50% {
+                transform: translateX(-10px);
+                background-color: black;
+            }
+            100% {
+                transform: translateX(-170px);
+                background-color: white;
+            }}
+            @keyframes dayToNight {
+                0% {
+                    background-color: white;
+                }
+                50% {
+                    background-color: black;
+                }
+                100% {
+                    background-color: white;
+                }}
+                
+            .pulse {
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: block;
+                border-radius: 100%;
+                background-color: #fcd25b;
+                animation: pulsante 6s ;}
+            @keyframes pulsante {
+
+            50% {box-shadow: #fcd25b 0 0 0 0;}
+            100% {box-shadow: rgb(255, 255, 255) 0 0 0 200px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="sun">
+             <div class="pulse"><div class="shadow"></div></div>
+        </div>
+    </div>
+</body>
+</html>
