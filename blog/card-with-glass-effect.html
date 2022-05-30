@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de vidro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @charset 'utf-8';
+        .card {
+            display: flex;
+            margin: 10vh auto;
+            width: 150px;
+            height: 600px;
+            position: relative;
+        }
+        .card-inner {
+            width: inherit;
+            height: inherit;
+            background-color: rgb(255, 255, 255, .05);
+            box-shadow: 0 0 10px rgb(255, 255, 255, .25);
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-image: radial-gradient(#b0e633, #53ef7d);
+            border-radius: 50%;
+            position: absolute;
+            animation: move-up .8s ease-in infinite alternate-reverse;}
+        .circle:nth-child(1) {
+            top: -25px;
+            left: -25px;
+        }
+        .circle:nth-child(2) {
+            bottom: -25px;
+            right: -25px;
+            animation-name: move-down;
+        }
+        .circle:nth-child(3) {
+            bottom: 155px;
+            left: -65px;
+            animation-name: move-down;
+        }
+        .circle:nth-child(4) {
+            top: 150px;
+            left: 100px;
+            animation-name: move-down;}
+        @keyframes move-up {
+            to {transform: translateY(-10px);}}
+        @keyframes move-down {to{transform: translateY(10px);}} 
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="card-inner"></div>
+    </div>
+</body>
+</html>

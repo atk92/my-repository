@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: calc(100vh - 80px);
+            margin: 40px;
+            background-color: #212121;
+        }
+        .burger {
+            margin: auto;
+            height: 80%;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            
+        }
+        .burger .bun {
+            height: 80px;
+            width: 180px;
+            border-radius: 100px 100px 0px 0px;
+            background-color: #f4a000;
+        }
+        .burger .bun.bottom {
+            border: 0px 0px 100px 100px;
+        }
+        .burger .cosmic-fill {
+            filter: contrast(200%);
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: url("/burger.svg");
+            background-repeat: round;
+        }
+    </style>
+</head>
+<body>
+    <div class="burger">
+        <div class="bun top"></div>
+        <div class="cosmic-fill"></div>
+        <div class="bun bottom"></div>
+    </div>
+</body>
+</html>
