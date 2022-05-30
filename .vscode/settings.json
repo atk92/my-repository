@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/blog/aniversario/brith.html"
+    "livePreview.defaultPreviewPath": "/blog/aniversario/brith.html",
+    "liveServer.settings.port": 5501
 }
