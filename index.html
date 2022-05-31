@@ -4,59 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Repositório</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Homemade+Apple&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style-index.css">
+    <title>Gradient Animation</title>
 </head>
-<body style="height:100vh; width:100vw;">
-    <header>
-        <h1 class="bem-vindo">Bem-Vindo</h1>
+<style>
+    * {padding: 0; margin: 0; border: 0;}
+    .text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+        font-size: 5rem;
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 2rem 2rem;
+        border-radius: 5px;
+        box-shadow: 0 0 1000px rgb(255, 255, 255);}
         
-    </header>
-    <main>
-        <section>
-            <span class="txtz">
-                <p>"Este o e meu repositorio do GitHub, sendo feito com muito esforço até porque eu não lá um grandioso programador ainda, está sendo mais pra mim aproveitar o lugar e expor meus projetinhos de alguma forma."</p>
-            </span>
-        </section>
-        <section>
-            <div class="container">
-                <a href="./tentativa-de-game/planejamento.html"><img src="https://img.icons8.com/clouds/64/000000/apple-arcade.png"/></a>
-                <a href="./calculadora/calc.html"><img src="https://img.icons8.com/officel/64/000000/estimate.png"/></a>
-                <a href="./quadrado-giratorio/index.html"><img src="https://img.icons8.com/emoji/64/000000/green-square-emoji.png"/></a>
-                <a href="./curriculum/curriculum.html"><img src="https://img.icons8.com/color/64/000000/resume.png"></a>
-                <a href="./card/card.html"><img src="https://img.icons8.com/carbon-copy/64/000000/nubank.png"/></a>
-                <a href="./fogo-do-doom/doom-fire.html"><img src="https://img.icons8.com/plasticine/64/000000/doom-logo.png"/></a>
-                <a href="./mariok-kaboom.js/mario-kaboom.html"><img src="https://img.icons8.com/plasticine/64/000000/super-mario.png"/></a>
-                <a href="./design/gtx.html"><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-project-agile-flaticons-lineal-color-flat-icons.png"/></a>
-                <a href="./blog/eclipse.html"><img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-eclipse-weather-flaticons-lineal-color-flat-icons-3.png"/></a>
+        
+        
+        
+        /*@keyframes color {
+            0%     {box-shadow:5px 0px 500px rgb(255, 255, 255);}
+            10%    {box-shadow:5px 0px 1000px rgb(0, 0, 255);}
+            20%    {box-shadow:5px 0px 1000px rgb(255, 0, 255);}
+            30%    {box-shadow:5px 0px 1000px rgb(255, 0, 0);}
+            40%    {box-shadow:5px 0px 1000px rgb(150, 150, 255);}
+            60%    {box-shadow:5px 0px 1000px rgb(255, 255, 0);}
+            70%    {box-shadow:5px 0px 1000px rgb(0, 255, 0);}
+            80%    {box-shadow:5px 0px 1000px rgb(255, 255, 255);}
+            90%    {box-shadow:5px 0px 1000px rgb(255, 255, 255);}
+            100%   {box-shadow:5px 0px 1000px rgb(255, 255, 255);}
             
-            </div>
-        </section>
-    </main>
-    <footer class="footer-dark">
-            
-                
-            <div class="icones-social">
-                
-                        <div class="icones-social2"><a href="https://www.facebook.com/carloshenriqueoliveira.silva.988" target="_blank"><img src="https://img.icons8.com/dotty/36/000000/facebook-new.png"/></a>
-                        </div>
-                    
-                        <div class="icones-social2"><a href="https://www.instagram.com/_carlos.henriq.os/" target="_blank"><img src="https://img.icons8.com/dotty/36/000000/instagram-new.png"/></a>
-                        </div>
-                                
-                        <div class="icones-social2"><a href="https://twitter.com/note8promtk9" target="_blank"><img src="https://img.icons8.com/dotty/36/000000/twitter.png"/></a>
-                        </div>     
-                       
+        }
+         /*(100deg, #c1c1c1, #c6c6c6, #c9c9c9, #c8c8c8, #c7c7c7, #c6c6c6, #c5c5c5, #c4c4c4, #c3c3c3, #c2c2c2, #c1c1c1);*/
+              
+         
+    
+    .gradient {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background: radial-gradient( #3DB1F5, #fff, #f320d7, blue, #3DB1F5, #f59f3d, #3DB1F5);
+        background-size: 1000% 1000%;
+        animation: colors 30s alternate-reverse infinite;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
-            </div>
-            <p class="rodape-text">Carlos Henrique O. Silva <br> 2022</p>
-    </footer>
+    @keyframes colors {
+        0% {background-position: 5% 15%;}
+        20% {background-position: 15% 25%;}
+        40% {background-position: 50% 25%;}
+        60%  {background-position: 50% 25% ;}
+        80% {background-position: 50% 75%;}
+        100% {background-color: #ffffff;}
+    }
+</style>
+<body>
+    <div class="gradient">
+        <div class="text"> <a href="#">Projetos</a></div>
+        
+    </div>
 </body>
 </html>
