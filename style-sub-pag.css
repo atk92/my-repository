@@ -6,9 +6,9 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-image: radial-gradient( #F10010, #231F20, #A62639, #266DD3);
+    background-image: radial-gradient( #b90511, #231F20, #b80f5e, #266DD3);
     background-size: 300% 300%;
-    animation: bg-animation 10s alternate infinite ;
+    animation: bg-animation 8s alternate infinite ;
 }
 @keyframes bg-animation {
     0% { background-position: 0% 25%;}
@@ -23,7 +23,15 @@
     bottom: 0;
     left: 0;
     right: 0;
-    width: 95vw;
-    height: 95vh;
-    border-radius: 0 20px 0 20px ;
-    background-color: white;}
+    width: 85vw;
+    height: 85vh;
+    border-radius: 30px ;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 -1px 100px rgba(255, 255, 255, 0.418);}
+    .div-header {
+        height: 10vh;
+        width: 85vw;
+        border-radius: 30px 30px 0 0 ;
+        background-color: #231F20;
+       
+    }
