@@ -6,7 +6,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-image: radial-gradient( #b90511, #231F20, #b80f5e, #266DD3);
+    background-image: radial-gradient( #b90511, #d66363, #b80f5e, #266DD3, #2363BE);
     background-size: 300% 300%;
     animation: bg-animation 8s alternate infinite ;
 }
