@@ -6,7 +6,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-image: radial-gradient( #b90511, #d66363, #b80f5e, #266DD3, #2363BE);
+    background-image: radial-gradient( #5c38db, #3843db, magenta, #3911ca, #cc2ccc,#a73ea7, #3423cc, #cc2ccc, #cc2c7c, #ee3bb8, magenta );
     background-size: 300% 300%;
     animation: bg-animation 8s alternate infinite ;
 }
@@ -66,11 +66,11 @@
     border-radius: 0 0 15px 15px ;
     margin: auto ;
     
-}.partOfDown {
-    width: 35px;
-    height: 35px;
+}.botao {
+    width: 36px;
+    height: 36px;
     background-color:rgb(209, 209, 209);
-    margin: 6px auto  ;
+    margin: 5px auto  ;
     border-radius: 50%;
 }
 
@@ -78,13 +78,17 @@
     display: flex;
 }
 .content-display{
-    display: flex;
+    
 }
 .card{
+   
+}
+.links {
+    padding: 5px;
     display: flex;
-    width: 10px;
-    height: 10px;
-    margin: 5px 5px;
-    border-radius: 2px;
-    background-color: black;
+    width: 64px;
+    height: 64px;
+    margin: 10px 10px;
+    border-radius: 22px;
+    background-color: rgb(214, 214, 214);
 }
