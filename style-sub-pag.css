@@ -1,0 +1,29 @@
+* {padding: 0; border: 0; margin: 0;}
+
+.back {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: radial-gradient( #F10010, #231F20, #A62639, #266DD3);
+    background-size: 300% 300%;
+    animation: bg-animation 10s alternate infinite ;
+}
+@keyframes bg-animation {
+    0% { background-position: 0% 25%;}
+    50% {background-position: 25% 50%;}
+    100% {background-position: 75% 100%;}
+    
+}
+
+.front {position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 95vw;
+    height: 95vh;
+    border-radius: 0 20px 0 20px ;
+    background-color: white;}
