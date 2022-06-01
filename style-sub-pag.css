@@ -30,7 +30,7 @@
     box-shadow: 0 -1px 100px rgb(255, 255, 255);}
     .div-header {
         height: 4vh;
-        width: 82vw;
+        width: 83vw;
         margin: auto;
         border-radius: 30px 30px 0 0 ;
         background-color: #000;
@@ -60,18 +60,19 @@
     margin: 10px -36px;
 }
 .display {
-    width: 82vw;
+    width: 83vw;
     height: 75vh;
     background-color: white;
     border-radius: 0 0 15px 15px ;
     margin: auto ;
     
 }.botao {
-    width: 36px;
-    height: 36px;
-    background-color:rgb(209, 209, 209);
-    margin: 5px auto  ;
-    border-radius: 50%;
+    width: 8vw;
+    height: 2vh;
+    background-color:rgb(185, 158, 158);
+    margin: 10px auto  ;
+    border-radius: 10%;
+    box-shadow: 0 0 10px white;
 }
 
 .container-display{
