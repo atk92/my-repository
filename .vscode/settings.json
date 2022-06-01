@@ -1,4 +1,8 @@
 {
     "livePreview.defaultPreviewPath": "/blog/aniversario/brith.html",
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "cSpell.words": [
+        "botao",
+        "falante"
+    ]
 }
