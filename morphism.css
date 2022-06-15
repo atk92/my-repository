@@ -16,8 +16,6 @@ body {
 .container{
  position: relative;
  width: 350px;
- display: flex;
- justify-content: space-between;
 
  
  margin: auto;
@@ -34,7 +32,7 @@ body {
 .container h3 {
     color: #fff;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 .container .list {
