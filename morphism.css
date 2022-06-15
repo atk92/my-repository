@@ -14,9 +14,9 @@ body {
  margin-top: 10px;
 }
 .container{
- position: absolute;
+ position: relative;
  width: 350px;
- top: 25%;
+
  
  margin: auto;
  min-height: 500px;
