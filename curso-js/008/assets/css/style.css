@@ -1,0 +1,14 @@
+@charset 'utf-8';
+*{
+  font-family: 'Open Sans';
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.hora{
+  width: 90vw;
+  font-size: 40px;
+  margin: auto;
+  border-radius: 50%;
+}
