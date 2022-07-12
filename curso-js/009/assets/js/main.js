@@ -1,18 +1,45 @@
-const relogio = document.querySelector('.container');
-const boddy = document.querySelector('.boddy');
+const hora = document.querySelector('.horas');
+const minutos = document.querySelector('.minutos');
+const segundos = document.querySelector('.segundos');
 
-let segundos = 0;
+const fundo = document.querySelector('.sectionn');
+
+let secunds = 0;
+let minuts = 0;
+let hours = 0;
 let timer;
 
+
+// ${minutos}<br>${segundos}
+
 function iniciaTimer(){
+
   clearInterval(timer)
-  timer = setInterval(()=>{segundos++; relogio.innerHTML = criaHoraDosSegundos(segundos)}, 1000)
+  timer = setInterval(()=>{secunds++;
+    
+    
+    segundos.innerHTML = `${secunds}s<br>`;
+
+
+    if(secunds >= 59){
+      secunds = 0;
+      minuts++
+      minutos.innerHTML = `${minuts}m`;
+    }
+    if(minuts >= 59){
+      minuts = 0;
+      hours++
+    }
+    if(hours >= 23){
+      hours = 0;
+      minuts = 0;
+      hora.innerHTML = `${hours}h`;
+    }
+  
+  }, 1000)
 }
 
-function criaHoraDosSegundos(segundos){
-  const data = new Date(segundos * 1000);
-    return data.toLocaleTimeString('pt-BR', {hour12: false, timeZone:'GMT'})
-}
+
 
 document.addEventListener('click', (event)=>{
   const elemento = event.target;
@@ -26,33 +53,32 @@ document.addEventListener('click', (event)=>{
     pause();
     function pause(){
       clearInterval(timer)}
-      console.log('pausar')
-      
-  }
+      console.log('pausar')}
 
   if(elemento.classList.contains('zerar')){
-    
-    segundos = 0;
+    hours = 0;
+    minuts = 0;
+    secunds = 0;
     clearInterval(timer)
-    relogio.innerHTML = '00:00:00';
-    
+    segundos.innerHTML = `${secunds}s`;    
   }
-
 })
 
+
+
+// tema claro e escuro
 document.addEventListener('click', (evento)=>{
   const elemento = evento.target;
   
 
   if(elemento.classList.contains('escuro')){
-    console.log('escuro')
-    boddy.style.background = '#000'
-    relogio.style.color = '#fff'
+    console.log('escuro');
+    fundo.style.background = '#000';
+    hora.style.color = '#fff';
     }
   if(elemento.classList.contains('claro')){
-      console.log('claro')
-      boddy.style.background = '#fff'
-      relogio.style.color = '#000'
+      console.log('claro');
+      fundo.style.background = '#fff';
+      hora.style.color = '#000';
       }
 })
-
