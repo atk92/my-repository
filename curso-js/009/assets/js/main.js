@@ -56,11 +56,13 @@ document.addEventListener('click', (event)=>{
       console.log('pausar')}
 
   if(elemento.classList.contains('zerar')){
-    hours = 0;
-    minuts = 0;
+    hours = '';
+    minuts = '';
     secunds = 0;
     clearInterval(timer)
     segundos.innerHTML = `${secunds}s`;    
+    hora.innerHTML = `${hours}`;    
+    minutos.innerHTML = `${minuts}`;    
   }
 })
 
