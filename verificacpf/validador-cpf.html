@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./validador-cpf.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador CPF</title>
+</head>
+<body>
+ 
+    <div class="div-body">
+      <div class="cardText">
+        <h1 class="titulos">Verificador de CPF</h1>
+        <p>Este verificador, verifica se o CPF <br> é valído utilizando <br> a médotologia de calculo usado <br> para gerar CPF's... <br>
+        </p>
+        <h2 class="titulos">Requisitos</h2>
+        <p>Ter 11 digitos <br>como são numeros <br> então nada de letras ! Ok?</p>
+        <h3 class="titulos">Observação</h3> 
+        <p>Esta aplicação estática <br>
+        valida cadastro de pessoa física <br>
+      mas é somente uma válidação, ok? <br>
+    não necessariamente esse <br> cpf precisa estar ativo <br> ou existir Ok?</p>
+    <p class="resultado">Vamos là...</p>
+      </div>
+      <section class="container-validadorCpf">
+      <div class="areaBtn">
+        <input placeholder="xxx.xxx.xxx-xx"type="text" name="" id="btn-text" class='envCpf'>
+      <button onclick="recebeCpf()" class="btn-input">Verificar</button>
+        <div class="resultado"></div>
+      </div>
+      </section>
+      <script src="./validador-cpf.js"></script>
+    </div>
+</body>
+</html>
